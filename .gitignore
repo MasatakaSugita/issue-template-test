@@ -1,0 +1,42 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env_aws
+.aws_env
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.idea
+_ide_helper.php
+
+# BuildFiles
+public/css
+public/js
+resources/assets/build
+
+# DB data
+.docker/db/data/*
+.docker/redis/data/*
+
+# docker-sync
+.docker-sync
+.docker-sync/daemon.log
+
+# Sitemap
+public/sitemap.xml
+public/sitemap/*
+
+!.gitkeep
+

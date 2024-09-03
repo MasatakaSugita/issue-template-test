@@ -1,0 +1,63 @@
+name: EOL対応テンプレート
+description: EOL対応のためのテンプレートです。
+title: "[EOL]: "
+labels: ["EOL対応"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        以下の項目を埋めてください。
+
+  - type: textarea
+    id: what-to-do
+    attributes:
+      label: やりたいこと
+      description: 何をするのか記述してください。
+      placeholder: 対応内容を記述してください。
+    validations:
+      required: true
+
+  - type: input
+    id: internal-deadline
+    attributes:
+      label: 社内対応期限
+      description: いつまでに対応する予定なのか記述してください。
+      placeholder: 社内対応期限を記述してください。
+    validations:
+      required: true
+
+  - type: input
+    id: eol-deadline
+    attributes:
+      label: EOL期限
+      description: 公式のEOL期限を記述してください。
+      placeholder: EOL期限を記述してください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: not-in-scope
+    attributes:
+      label: やらないこと
+      description: この対応でやらないことを記述してください。
+      placeholder: スコープ外の内容を記述してください。
+    validations:
+      required: false
+
+  - type: textarea
+    id: done-condition
+    attributes:
+      label: 完了条件
+      description: このタスクの完了条件を記述してください。
+      placeholder: 完了条件を記述してください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: 参考資料
+      description: 外部資料などを添付してください。
+      placeholder: 参考になるリンクやドキュメントを記述してください。
+    validations:
+      required: false

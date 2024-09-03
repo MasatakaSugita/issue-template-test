@@ -1,0 +1,62 @@
+name: 通常タスクテンプレート
+description: タスクの品質を維持するためのテンプレートです。
+title: ""
+body:
+  - type: markdown
+    attributes:
+      value: |
+        以下の項目を埋めてください。
+
+  - type: textarea
+    id: what-to-do
+    attributes:
+      label: やりたいこと
+      description: 何をしたいのか記述してください。
+      placeholder: タスクの内容を記述してください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: なぜやるか
+      description: 目的や背景を記述してください。
+      placeholder: 目的や背景を記述してください。
+    validations:
+      required: true
+
+  - type: input
+    id: requester
+    attributes:
+      label: 依頼元(者)
+      description: このタスクの依頼者を記述してください。
+      placeholder: 依頼元の名前や部門を記述してください。
+    validations:
+      required: false
+
+  - type: textarea
+    id: not-in-scope
+    attributes:
+      label: やらないこと
+      description: このタスク内で扱わないことを記述してください。
+      placeholder: タスクのスコープ外の内容を記述してください。
+    validations:
+      required: false
+
+  - type: textarea
+    id: done-condition
+    attributes:
+      label: 完了条件
+      description: このタスクの完了条件を記述してください。
+      placeholder: 完了条件を記述してください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: 参考資料
+      description: 外部資料などを添付してください。
+      placeholder: 参考になるリンクやドキュメントを記述してください。
+    validations:
+      required: false
