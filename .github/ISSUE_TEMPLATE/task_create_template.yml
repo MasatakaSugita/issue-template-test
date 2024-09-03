@@ -1,6 +1,5 @@
 name: 通常タスクテンプレート
 description: タスクの品質を維持するためのテンプレートです。
-title: " "
 body:
   - type: markdown
     attributes:
